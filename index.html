@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agus Adiyanto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-background">
+          <div class="logo">
+            <h4>RevoU Academy</h4>
+          </div>
+          <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+      
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span> <span></span> <span></span> 
+            </label>
+            <ul class="nav-menu">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#learning">Learning</a></li>
+              <li><a href="#message-us">Message Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+    <main class="main-background">
+
+        <!--Hero Section-->
+        <section class="hero-background id="hero">
+            <div class="hero-container">
+                <div class="hero">
+                    <p>Hi <span id="username">Guest</span>!, Welcome to my website</p>
+                    <h1>Web Mini Project<br>Agus Adiyanto</h1>
+                    <p>Ini adalah mini project dari Fundamental<br>
+                        Course Software Engineering RevoU<br>
+                        setelah banyak belajar HTML, CSS, dan JS.<br>
+                        Ikuti akun LinkedIn saya</p>
+                        <button onclick="window.open('https://www.linkedin.com/in/agusadiyanto/', '_blank')"><b>Lets Connect</b></button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/logo.png" alt="Logo RevoU">
+                </div>
+            </div>
+        </section>
+
+        <!--Progress Section-->
+        <section class="progress-container" id="program">
+            <div class="progress">
+                <h1>Program Minicourse RevoU</h1>
+                <p>Ada 4 program unggulan yang dimiliki RevoU</p>
+                
+                <div class="image-slider">
+                    <div class="slide">
+                        <img src="assets/MC_DA-10Days.png" alt="MC_DA - 10 Days">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/MC_DM-10Days.png" alt="MC_DM - 10 Days">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/MC_PM-10Days.png" alt="MC_PM - 10 Days">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/FC_SE-10Days.png" alt="FC_SE - 10 Days">
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
+            </div>
+        </section>
+
+        <!--Learning Section-->
+        <section class="learning-background">
+            <div class="learning" id="learning">
+                <h2>Apa yang di pelajari</h2>
+                <div class="learning-items">
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-3.png" alt="HTML Logo"></div>
+                        <p>HTML (Hyper Text Markup Language)</p>
+                    </div>
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-1.png" alt="CSS Logo"></div>
+                        <p>CSS (Cascading Style Sheet)</p>
+                    </div>
+                    <div class="learning-item">
+                        <div class="circle"><img src="assets/circle-2.png" alt="JS Logo"></div>
+                        <p>JS (Java Script)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Message Us Section-->
+        <section class="message-us" id="message-us">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form onsubmit="return handleSubmit(event)">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required> 
+                    <label for="dob">Tanggal Lahir</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="gender">Jenis Kelamin</label>
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" required></textarea> 
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="info">
+                    <p><b>Tgl/Jam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </p> <br>
+                    <p><b>Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </p>
+                    <p><b>Tanggal Lahir &nbsp;:</b> </p>
+                    <p><b>Jenis Kelamin :</b> </p>
+                    <p><b>Pesan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </p>
+                </div>
+            </div>
+        </section>
+        <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+        
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <p>Created by <a href="http://agusadiyanto.net" target="_blank">Agus Adiyanto</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
